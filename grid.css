@@ -1,0 +1,22 @@
+
+
+.item-1 {grid-area: header;}
+.item-2 {grid-area: menu;}
+.item-3 {grid-area: main;}
+.item-4 {grid-area: aside;}
+.item-5 {grid-area: footer;}
+
+.wrapper-grid {
+    display: grid;
+    grid-template-areas: 
+    'header header header header header header'
+    'menu main main main aside aside'
+    'menu footer footer footer footer footer'
+
+}
+.wrapper-grid > div {
+    border:1px solid red;
+    padding:10px;
+    text-align: center;
+    background-color: aqua;
+}
