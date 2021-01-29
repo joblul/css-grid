@@ -1,0 +1,26 @@
+
+.header {
+    background-color: brown;
+    grid-area: hd;
+}
+.sidebar {
+    background-color: cadetblue;
+    grid-area:sd;
+}
+.main {
+    background-color: crimson;
+    grid-area:mn;
+}
+.footer {
+    background-color: darkgreen;
+    grid-area:ft;
+}
+.wrapper {
+    background-color: blue;
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd hd hd"
+    "sd sd sd mn mn mn mn mn mn"
+    "sd sd sd ft ft ft ft ft ft";
+}
