@@ -1,0 +1,29 @@
+
+.header {
+    background-color:gray;
+    grid-area:hd;
+}
+.nav {
+    grid-area:nv;
+    background-color: greenyellow;
+}
+.main {
+    background-color: indigo;
+    grid-area: mn;
+}
+.footer {
+    grid-area:ft;
+    background-color: chocolate;
+}
+
+
+.grid-wrapper {
+    background-color: lightcoral;
+   display:grid;
+   grid-template-areas: 
+   "hd hd"
+   "nv mn"
+   "nv ft";
+   grid-template-rows: 50px 1fr 30px;
+   grid-template-columns: 150px 1fr; 
+}
